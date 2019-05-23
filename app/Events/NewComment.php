@@ -44,6 +44,10 @@ class NewComment implements ShouldBroadcastNow
             'body' => $this->comment->body,
             'created_at' => $this->comment->created_at->toFormattedDateString(),
             'user' => [
+                /**
+                 * Informaçao que posso passar do utilizador
+                 * Nome, Avatar, Nickname (Dados que possam ser públicos)
+                 */
                 'name' => $this->comment->user->name,
 //                'avatar' => $this->comment->user->avatar,
             ]

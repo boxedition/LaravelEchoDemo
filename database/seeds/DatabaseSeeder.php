@@ -6,6 +6,8 @@ class DatabaseSeeder extends Seeder
 {
     /**
      * Run the database seeds.
+     *
+     * Create 5 Users
      * Each User creates 3 Posts
      * @return void
      */
